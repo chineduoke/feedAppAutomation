@@ -9,7 +9,7 @@ import org.junit.platform.suite.api.Suite;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("com/bptn/feedAppAutomation")
+@SelectClasspathResource("com/bptn/feedAppAutomation/pageFeatures/registerPage.feature")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.bptn.feedAppAutomation")
 public class RunCucumberTest {
 }
