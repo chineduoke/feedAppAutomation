@@ -28,3 +28,10 @@ Feature: Login Page
        |bad-user |bad-password |
        |bad-user |123          |
      
+       @WebTest
+  Scenario: Success - User Login - New User
+    Given User is on the login page "/user/login"
+     When User logs into the application with username "iyuvraajsingh" and password "Hello@123"
+      And User clicks 'Submit' on the login page
+     Then User should navigate to "/app/completeProfile" to complete their user profile
+     
